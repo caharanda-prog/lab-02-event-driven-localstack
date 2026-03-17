@@ -48,7 +48,14 @@ Each consumer works independently, reinforcing a loosely coupled architecture.
 
 ## 📊 Architecture Diagram
 
-> TODO: Add architecture diagram here (PNG or SVG)
+[Producer] → [EventBridge] → [Rules]
+                               │
+                               ▼
+                         [SQS Queues]
+                         │
+                         ├── [Orders Queue] ───────▶ [Orders Worker]
+                         ├── [Payments Queue] ─────▶ [Payments Worker]
+                         └── [Notifications Queue] ▶ [Notifications Worker]
 
 ---
 
