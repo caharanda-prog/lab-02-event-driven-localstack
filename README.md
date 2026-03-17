@@ -132,7 +132,7 @@ This will create:
 ### 3. Run Producer
 
 ```bash
-python producer/producer.py
+python producers/producer.py
 ```
 
 The producer will:
