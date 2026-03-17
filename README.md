@@ -58,6 +58,7 @@ Each consumer works independently, reinforcing a loosely coupled architecture.
                              ├── [Payments Queue] ─────▶ [Payments Worker]
                              └── [Notifications Queue] ▶ [Notifications Worker]
 
+```
 ---
 
 ## ⚙️ Tech Stack
